@@ -773,6 +773,7 @@ contract KIP7 is KIP13, IKIP7 {
      */
     function _mint(address account, uint256 amount) internal {
         require(account != address(0), "KIP7: mint to the zero address");
+        require(_totalSupply == 0, "WARN: total Amount Change is not allow.");
 
         _totalSupply = _totalSupply.add(amount);
         _balances[account] = _balances[account].add(amount);
