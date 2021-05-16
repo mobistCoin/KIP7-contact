@@ -1001,8 +1001,8 @@ contract KIP7Token is KIP7Mintable, KIP7Burnable, KIP7Pausable, KIP7Metadata {
 /* MITX Token Impl   */
 /*********************/
 contract MITX is KIP7Token {
-    string name_ = "BMOBIST";
-    string symbol_ = "BMITX";
+    string name_ = "MOBIST";
+    string symbol_ = "MITX";
     uint8 decimals_int = 18;
     uint256 public init_supply = 10000000000 * (10 ** uint256(decimals_int));
     
